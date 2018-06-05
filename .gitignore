@@ -1,0 +1,7 @@
+# ignore content related
+
+content/
+static/
+themes/
+
+tools/

@@ -1,0 +1,17 @@
+
+theme = "hugo-theme-s2u2m"
+title = "Slancer"
+publishDir = "docs"
+
+disablePathToLower = true
+
+[author]
+    name = "Slancer"
+    avatar = "https://avatars1.githubusercontent.com/u/26137349?s=400&u=d73bcb3dcc5d580b19c585a1ff483ab248adbd1c&v=4"
+    motto = "Freedom world, Share valuable everywhere"
+    github = "https://github.com/S2U2MLancer"
+    email = "xiayy860612@126.com"
+
+[params]
+    beian = "蜀ICP备18013492号"
+    copyright = "s2u2m"

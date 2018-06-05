@@ -1,0 +1,7 @@
+[submodule "themes/hugo-theme-s2u2m"]
+	path = themes/hugo-theme-s2u2m
+	url = https://github.com/xiayy860612/hugo-theme-s2u2m.git
+
+[submodule "tools/pmd2hugo"]
+	path = tools/pmd2hugo
+	url = https://github.com/xiayy860612/pmd2hugo.git
