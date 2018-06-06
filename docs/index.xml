@@ -7,15 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Slancer)</managingEditor>
     <webMaster>xiayy860612@126.com (Slancer)</webMaster>
-    <lastBuildDate>Tue, 05 Jun 2018 02:39:46 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>ASP.net 配置管理设计</title>
+      <link>/%E5%BD%92%E6%A1%A3/CSharp/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>xiayy860612@126.com (Slancer)</author>
+      <guid>/%E5%BD%92%E6%A1%A3/CSharp/configuration/</guid>
+      <description>&lt;p&gt;Configuration Managemnet Implement in ASP.Net Core.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>知识BBQ-成都-20170226</title>
+      <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20170226/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>xiayy860612@126.com (Slancer)</author>
+      <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20170226/</guid>
+      <description> 活动内容
+ SOA介绍, Amos Xia   主持分享 SOA 介绍  SOA实践指南 Microservice Architecture Microservices, a definition of this new architectural term  自由分享  Golang  </description>
+    </item>
+    
+    <item>
       <title>知识BBQ-成都-20180429</title>
       <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180429/</link>
-      <pubDate>Tue, 05 Jun 2018 02:37:39 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>xiayy860612@126.com (Slancer)</author>
       <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180429/</guid>
       <description> 本次活动的主题为互联网分布式系统应用架构的概览, 主要从2个层面的扩展来看, 网络层和应用层
@@ -25,7 +44,7 @@
     <item>
       <title>知识BBQ-成都-20180527</title>
       <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180527/</link>
-      <pubDate>Tue, 05 Jun 2018 02:37:39 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>xiayy860612@126.com (Slancer)</author>
       <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180527/</guid>
       <description>TypeScript in Angular  源码

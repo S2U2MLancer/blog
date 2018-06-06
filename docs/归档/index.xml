@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>知识BBQ on Slancer</title>
-    <link>/%E7%9F%A5%E8%AF%86BBQ/</link>
-    <description>Recent content in 知识BBQ on Slancer</description>
+    <title>归档 on Slancer</title>
+    <link>/%E5%BD%92%E6%A1%A3/</link>
+    <description>Recent content in 归档 on Slancer</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Slancer)</managingEditor>
     <webMaster>xiayy860612@126.com (Slancer)</webMaster>
     
-	<atom:link href="/%E7%9F%A5%E8%AF%86BBQ/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/%E5%BD%92%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

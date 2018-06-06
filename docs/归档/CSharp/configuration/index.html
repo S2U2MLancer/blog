@@ -87,13 +87,107 @@
         <div class="col-xs-11 col-sm-8 col-md-8">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 
+
 <div class="container">
     <div class="row">
         <div class="col">
-            404 Not Found
-        </div>
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/%E5%BD%92%E6%A1%A3/">归档</a>
+
+
+<a class="breadcrumb-item" href="/%E5%BD%92%E6%A1%A3/CSharp/">CSharp</a>
+
+            
+            <span class="breadcrumb-item active">ASP.net 配置管理设计</span>
+        </nav>
     </div>
 </div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <header>
+                <h1>ASP.net 配置管理设计</h1>
+            </header>
+            <br />
+            <article><p>Configuration Managemnet Implement in ASP.Net Core.
+</p>
+
+<p>Configuration Management Features
+- Manage different kind of multiple configuration sources.
+- Easy to config for different environments, such as dev, release.
+- Bind configuration values into Decoupled Configuration Class.
+- Reload Configurations when configuration updates.</p>
+
+<h2 id="configuration-management-in-asp-net-core">Configuration Management in ASP.Net Core</h2>
+
+<p>Essential packages</p>
+
+<ul>
+<li>Microsoft.Extensions.Configuration.Abstractions,
+define essential interfaces for configuration management.</li>
+<li>Microsoft.Extensions.Configuration, basic implement of interfaces
+in Microsoft.Extensions.Configuration.Abstractions</li>
+<li>Microsoft.Extensions.Configuration.Binder,
+use reflect to convert configurations into decoupled configuration class.</li>
+</ul>
+
+<p><img src="/归档/CSharp/./img/asp.net-conf.png" alt="ASP.Net Configuration Design" />
+<strong>IConfiguration</strong></p>
+
+<p>Provides friendly common interfaces for users to get configuration.</p>
+
+<p>It manages multiple configuration providers.</p>
+
+<p><strong>IConfigurationProvider</strong></p>
+
+<p>It contains configuration data in memory which loaded from configuration source.</p>
+
+<p><strong>IConfigurationSource</strong></p>
+
+<p>It&rsquo;s a representation of configuration source
+and used to build provider.</p>
+
+<p>Also it used to watch update of source,
+when update notify provider to reload data from source.</p>
+
+<p><strong>Configuration Class Bind</strong></p>
+
+<p>It should always get a copy of data
+from configuration provider for configuration class.
+It makes thead-safe.</p>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="http://deviq.com/interface-segregation-principle/">Interface Segregation Principle</a></li>
+<li><a href="http://deviq.com/separation-of-concerns/">Separation of Concerns</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Builder_pattern">Builder pattern</a></li>
+</ul>
+
+<hr /></article>
+        </div>
+    </div>
+    
+    
+</div>
+
 
                 
             </div>
