@@ -7,14 +7,68 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Slancer)</managingEditor>
     <webMaster>xiayy860612@126.com (Slancer)</webMaster>
+    <lastBuildDate>Sun, 01 Jul 2018 19:50:02 +0800</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>知识BBQ-成都-20180527</title>
+      <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180527/</link>
+      <pubDate>Sun, 01 Jul 2018 19:43:33 +0800</pubDate>
+      <author>xiayy860612@126.com (Slancer)</author>
+      <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180527/</guid>
+      <description>PS: 所有视频存储在Youtube上, 需要翻墙观看
+TypeScript in Angular 作者: 吴成龙
+ 源码
+Spring Request Workflow 作者: Amos Xia
+ 文档</description>
+    </item>
+    
+    <item>
+      <title>知识BBQ-成都-20180701</title>
+      <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180701/</link>
+      <pubDate>Sun, 01 Jul 2018 19:43:33 +0800</pubDate>
+      <author>xiayy860612@126.com (Slancer)</author>
+      <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180701/</guid>
+      <description> PS: 所有视频存储在Youtube上, 需要翻墙观看
+Schema与数据类型优化  作者: Amos Xia 出处: Schema与数据类型优化   Java NIO的基本使用  作者: 杨雪 出处: NIO基本使用   </description>
+    </item>
+    
+    <item>
+      <title>NIO介绍</title>
+      <link>/%E5%BD%92%E6%A1%A3/Java/NIO%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D/</link>
+      <pubDate>Sun, 01 Jul 2018 18:32:37 +0800</pubDate>
+      <author>xiayy860612@126.com (Slancer)</author>
+      <guid>/%E5%BD%92%E6%A1%A3/Java/NIO%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D/</guid>
+      <description>作者: yangxue demo: https://github.com/mypennyXue/JavaStudy 参考: http://ifeve.com/java-nio-all/  标准的IO基于字节流和字符流进行操作的，而NIO是基于通道（Channel）和缓冲区（Buffer）进行操作， 数据总是从通道读取到缓冲区中，或者从缓冲区写入到通道中。 NIO可以工作在非阻塞模式下
+NIO 核心组件  Buffer Channel select  数据流： 主要的 channel：  FileChannel 从文件中读写数据 DatagramChannel 能通过UDP读写网络中的数据 SocketChannel 能通过TCP读写网络中的数据 （类似于Socket） ServerSocketChannel 可以监听新进来的TCP连接 Buffer类型 ByteBuffer
+ CharBuffer
+ DoubleBuffer
+ FloatBuffer
+ IntBuffer
+ LongBuffer
+ ShortBuffer
+  Buffer 三大属性： capacity（buffer容量） limit(下一个读取的位置) position（下一个写入的位置）
+Buffer的读写模式： 使用Buffer读写数据一般遵循以下四个步骤：
+ 写入数据到Buffer 调用flip()方法 从Buffer中读取数据 调用clear()方法或者compact()方法  Selector： Selector 可以监听的事件 事件 常量
+ Connect SelectionKey.OP_CONNECT Accept SelectionKey.</description>
+    </item>
+    
+    <item>
+      <title>[转载]Schema与数据类型优化</title>
+      <link>/%E5%BD%92%E6%A1%A3/Storage/MySQL/Schema%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Sun, 01 Jul 2018 18:32:37 +0800</pubDate>
+      <author>xiayy860612@126.com (Slancer)</author>
+      <guid>/%E5%BD%92%E6%A1%A3/Storage/MySQL/Schema%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BC%98%E5%8C%96/</guid>
+      <description>作者: Amos Xia demo: https://github.com/xiayy860612/example/tree/master/mysql_demo/schema 原文出处: Schema与数据类型优化  数据类型的选择 MySQL基础数据类型
+ 数字  整数  tinyint/smallint/mediumint/int/bigint unsigned可选  实数  Float/Double, 浮点计算 DECIMAL, 存储精确的小数, 一般可使用bigint来代替decimal, 通过乘以相应的倍数即可   字符串  char, 定长, 适合更新频繁的列或者长度固定的列 varchar, 变长, 需要额外的1或2个字节来存储长度, 小于等于255则1个字节, 大于则2个字节; 不适合更新频繁的列, 会导致碎片化 text, 很长的字符串  二进制字符串, 比较时以字节为单位进行比较, 效率要比普通字符串要高  binary, 定长 varbinary, 变长 blob, 很长的二进制字符串  时间  datetime, 从1001到9999年, 精度为秒, 把日期和时间封装到格式为YYYYMMDDHHMMSS的整数中, 显示与时区无关, 使用8字节存储 timestamp, 同unit时间戳, 从新纪元时间(1970-01-01T00:00:00)以来的秒数, 使用4字节存储, 只能表示1970到2038年, 显示依赖于时区, 会根据时区不同, 显示对应的时间; 对应的列默认为NOT NULL.</description>
+    </item>
+    
+    <item>
       <title>ASP.net 配置管理设计</title>
       <link>/%E5%BD%92%E6%A1%A3/CSharp/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jun 2018 20:15:47 +0800</pubDate>
       <author>xiayy860612@126.com (Slancer)</author>
       <guid>/%E5%BD%92%E6%A1%A3/CSharp/configuration/</guid>
       <description>&lt;p&gt;Configuration Managemnet Implement in ASP.Net Core.
@@ -24,7 +78,7 @@
     <item>
       <title>知识BBQ-成都-20170226</title>
       <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20170226/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jun 2018 20:15:47 +0800</pubDate>
       <author>xiayy860612@126.com (Slancer)</author>
       <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20170226/</guid>
       <description> 活动内容
@@ -34,21 +88,11 @@
     <item>
       <title>知识BBQ-成都-20180429</title>
       <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180429/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Jun 2018 20:15:47 +0800</pubDate>
       <author>xiayy860612@126.com (Slancer)</author>
       <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180429/</guid>
       <description> 本次活动的主题为互联网分布式系统应用架构的概览, 主要从2个层面的扩展来看, 网络层和应用层
 网络层  BGP多线技术 CDN DNS  应用层  负载均衡  弹性收缩 独立交付  应用层缓存 同步转异步  线程池模式 消息架构  数据库读写分离  Reference  活动视频下载, 密码: fzi3  </description>
-    </item>
-    
-    <item>
-      <title>知识BBQ-成都-20180527</title>
-      <link>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180527/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>xiayy860612@126.com (Slancer)</author>
-      <guid>/%E7%9F%A5%E8%AF%86BBQ/%E6%88%90%E9%83%BD/20180527/</guid>
-      <description>TypeScript in Angular  源码
-Spring Request Workflow  文档</description>
     </item>
     
   </channel>

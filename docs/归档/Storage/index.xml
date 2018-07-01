@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>归档 on Slancer</title>
-    <link>/%E5%BD%92%E6%A1%A3/</link>
-    <description>Recent content in 归档 on Slancer</description>
+    <title>Storage on Slancer</title>
+    <link>/%E5%BD%92%E6%A1%A3/Storage/</link>
+    <description>Recent content in Storage on Slancer</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>xiayy860612@126.com (Slancer)</managingEditor>
     <webMaster>xiayy860612@126.com (Slancer)</webMaster>
     <lastBuildDate>Sun, 01 Jul 2018 19:50:13 +0800</lastBuildDate>
     
-	<atom:link href="/%E5%BD%92%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/%E5%BD%92%E6%A1%A3/Storage/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

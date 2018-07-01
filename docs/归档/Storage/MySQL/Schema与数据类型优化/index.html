@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Slancer</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="generator" content="Hugo 0.40.3" />
+
+    
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/s2u2m.utils.js"></script>
+</head>
+
+<body class="container">
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="/">Slancer</a>
+                <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E5%BD%92%E6%A1%A3/">归档</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/%E7%9F%A5%E8%AF%86BBQ/">知识BBQ</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="hidden-xs col-sm-3 col-md-3 d-none d-sm-block">
+            <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col">
+            <div class="card text-left" style="border: none">
+                <img class="card-img-top" src="https://avatars1.githubusercontent.com/u/26137349?s=400&amp;u=d73bcb3dcc5d580b19c585a1ff483ab248adbd1c&amp;v=4" alt="self">
+                
+                <div class="card-body">
+                    <h4 class="card-title">Slancer</h4>
+                    
+                    <small class="card-text text-muted">Freedom world, Share valuable everywhere</small>
+                </div>
+
+                
+                <div class="card-body border-top">
+                    <a class="external" href="https://github.com/S2U2MLancer" target="_blank">
+                        <i class="fa fa-github fa-lg"></i>
+                    </a>
+                    <a class="email" href="mailto:xiayy860612@126.com">
+                        <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        
+        <div class="col-xs-11 col-sm-8 col-md-8">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+    <div class="col">
+        <nav class="breadcrumb">
+            
+                
+
+
+
+
+
+
+
+
+
+
+<a class="breadcrumb-item" href="/">Home</a>
+
+
+<a class="breadcrumb-item" href="/%E5%BD%92%E6%A1%A3/">归档</a>
+
+
+<a class="breadcrumb-item" href="/%E5%BD%92%E6%A1%A3/Storage/">Storage</a>
+
+
+<a class="breadcrumb-item" href="/%E5%BD%92%E6%A1%A3/Storage/MySQL/">MySQL</a>
+
+            
+            <span class="breadcrumb-item active">[转载]Schema与数据类型优化</span>
+        </nav>
+    </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <blockquote class="blockquote text-center">
+                <h1 class="mb-0">[转载]Schema与数据类型优化</h1>
+                <footer class="blockquote-footer">Slancer, 更新于2018-07-01 20:05:19</footer>
+            </blockquote>
+            <hr />
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col">
+            <article>
+
+<ul>
+<li>作者: <a href="https://amos.s2u2m.com/">Amos Xia</a></li>
+<li>demo: <a href="https://github.com/xiayy860612/example/tree/master/mysql_demo/schema">https://github.com/xiayy860612/example/tree/master/mysql_demo/schema</a></li>
+<li>原文出处: <a href="https://amos.s2u2m.com/IT%E7%B2%BE%E5%8D%8E/Storage/MySQL/Schema%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BC%98%E5%8C%96/">Schema与数据类型优化</a></li>
+</ul>
+
+<h2 id="数据类型的选择">数据类型的选择</h2>
+
+<p>MySQL基础数据类型</p>
+
+<ul>
+<li>数字
+
+<ul>
+<li>整数
+
+<ul>
+<li>tinyint/smallint/mediumint/int/bigint</li>
+<li>unsigned可选</li>
+</ul></li>
+<li>实数
+
+<ul>
+<li>Float/Double, 浮点计算</li>
+<li>DECIMAL, 存储精确的小数, 一般可使用bigint来代替decimal, 通过乘以相应的倍数即可</li>
+</ul></li>
+</ul></li>
+<li>字符串
+
+<ul>
+<li>char, 定长, 适合更新频繁的列或者长度固定的列</li>
+<li>varchar, 变长, 需要额外的1或2个字节来存储长度, 小于等于255则1个字节, 大于则2个字节; 不适合更新频繁的列, 会导致碎片化</li>
+<li>text, 很长的字符串</li>
+</ul></li>
+<li>二进制字符串, 比较时以字节为单位进行比较, 效率要比普通字符串要高
+
+<ul>
+<li>binary, 定长</li>
+<li>varbinary, 变长</li>
+<li>blob, 很长的二进制字符串</li>
+</ul></li>
+<li>时间
+
+<ul>
+<li>datetime, 从1001到9999年, 精度为秒, 把日期和时间封装到格式为<strong>YYYYMMDDHHMMSS</strong>的<strong>整数</strong>中, 显示<strong>与时区无关</strong>, <strong>使用8字节存储</strong></li>
+<li>timestamp, 同unit时间戳, 从新纪元时间(1970-01-01T00:00:00)以来的秒数, <strong>使用4字节存储</strong>, 只能表示1970到2038年, 显示依赖于时区, 会根据时区不同, 显示对应的时间; 对应的列默认为NOT NULL.</li>
+</ul></li>
+</ul>
+
+<h3 id="特殊数据类型的处理">特殊数据类型的处理</h3>
+
+<p><strong>uuid</strong>数据的处理:</p>
+
+<ol>
+<li>移除uuid中的<strong>-</strong></li>
+<li>使用unhex函数将uuid字符串转换为16字节的数字, 存储到binary(16)中</li>
+<li>使用hex函数将16字节的数字转换为uuid字符串</li>
+</ol>
+
+<pre><code>mysql&gt; select uuid();
++--------------------------------------+
+| uuid()                               |
++--------------------------------------+
+| e8dc60bb-6df3-11e8-8915-0800273063ab |
++--------------------------------------+
+1 row in set
+
+mysql&gt; select unhex('e8dc60bb6df311e889150800273063ab');
++-------------------------------------------+
+| unhex('e8dc60bb6df311e889150800273063ab') |
++-------------------------------------------+
+| ��`�m��
++-------------------------------------------+
+1 row in set
+
+mysql&gt; select hex(unhex('e8dc60bb6df311e889150800273063ab'));
++------------------------------------------------+
+| hex(unhex('e8dc60bb6df311e889150800273063ab')) |
++------------------------------------------------+
+| E8DC60BB6DF311E889150800273063AB               |
++------------------------------------------------+
+1 row in set
+
+</code></pre>
+
+<hr />
+
+<p><strong>ip</strong>数据需要转换为数字存储:</p>
+
+<ol>
+<li>使用无符号整数存储ip列</li>
+<li>使用inet_aton将ip字符串转换为整数</li>
+<li>使用inet_ntoa将数字转换为ip字符串</li>
+</ol>
+
+<pre><code>mysql&gt; select inet_aton('192.168.0.1');
++--------------------------+
+| inet_aton('192.168.0.1') |
++--------------------------+
+|               3232235521 |
++--------------------------+
+1 row in set
+
+mysql&gt; select inet_ntoa(3232235521);
++-----------------------+
+| inet_ntoa(3232235521) |
++-----------------------+
+| 192.168.0.1           |
++-----------------------+
+1 row in set
+
+</code></pre>
+
+<hr />
+
+<p><strong>id列</strong>的数据类型尽量选择<strong>递增型整数</strong></p>
+
+<p>因为随机值会分布在很大的空间中, 导致insert和select变慢.
+而且随机值的插入会随机写到索引的不同位置, 导致insert语句变慢;
+由于数据分布在很大的空间中, 也就导致了select指定的数据会变慢;
+还会导致缓存失效.</p>
+
+<p><strong>由于InnoDB的索引是一个B+Tree, 所以按顺序的插入能够保证数据很快插入,
+并保证数据集中在一定的范围之内. 递增插入是比较好的选择.</strong></p>
+
+<p>不建议使用字符串类型作为id列, 查询性能很差.</p>
+
+<p>一般情况下尽量使用默认值方案来替换NULL, 因为NULL会增加查询的复杂度.</p>
+
+<h2 id="schema的设计">Schema的设计</h2>
+
+<h3 id="范式与反范式">范式与反范式</h3>
+
+<p>范式的主要目的:</p>
+
+<ul>
+<li>减少数据冗余</li>
+<li>消除插入/删除/更新的异常</li>
+</ul>
+
+<p>关键概念:</p>
+
+<ul>
+<li>码/键(候选码), 表中的一个或多个属性组K, 除开K中的属性外的其他所有属性都完全函数依赖于K, 则K为候选码; 一个表可能存在多个码</li>
+<li>主属性, 包含在各个候选码中的属性, 主属性不可为空</li>
+</ul>
+
+<p>通常使用的范式:</p>
+
+<ul>
+<li>1NF(Normal Form)第一范式, 属性的原子性保证不可再分割, 每个属性都只能存储一个值</li>
+<li>2NF第二范式, 基于1NF, 定义候选码, 非主属性必须<strong>完全依赖</strong>于候选码, 即通过候选码可以确定实体的唯一性</li>
+<li>3NF第三范式, 基于2NF, 消除<strong>传递依赖</strong>, 即任何非主属性不能由其他属性派生, 要求<strong>属性没有冗余</strong></li>
+<li>BCNF, 基于3NF的改进范式, 消除<strong>主属性对码的部分与传递依赖</strong></li>
+</ul>
+
+<p>一般情况下, 关系型数据库的表设计只要达到<strong>3NF/BCNF</strong>就够了.</p>
+
+<pre><code>// 不符合1NF, 电话列可继续拆分
+学生|课程|老师|电话(手机, 座机)|教材|教室|上课时间 
+
+// 符合1NF, 候选码为(学生, 课程), 但不符合2NF, 教材只部分依赖于主键列中的课程
+学生|课程|老师|手机|座机|教材|教室|上课时间 
+
+// 符合2NF, 但不符合3NF, (学生, 课程) =&gt; 老师 =&gt; 手机|座机, 存在传递依赖
+学生|课程|老师|手机|座机|教室|上课时间
+
+课程|教材
+
+// 符合3NF
+学生|课程|老师|教室|上课时间
+
+课程|教材
+
+老师|手机|座机
+
+</code></pre>
+
+<p>上面例子中的关系图:</p>
+
+<p><img src="/归档/Storage/MySQL/./img/schema_data_type/example.jpg" alt="" /></p>
+
+<p>针对<strong>写密集</strong>的场景尤其需要对schema进行范式化, 而针对读密集的场景可以使用反范式.</p>
+
+<p>范式化的表能够更好更快的进行更新操作, 但是查询往往需要多表join;
+然而单独的表能够更有效的利用索引.</p>
+
+<h3 id="缓存表-汇总表">缓存表 &amp;&amp; 汇总表</h3>
+
+<p>通过缓存表和汇总表来缓存源数据经过逻辑计算后的冗余数据, 可以提升相应业务逻辑场景的查询性能.</p>
+
+<ul>
+<li>非实时性数据, 定时计算更新的不严格计数</li>
+<li>实时性数据, 通过<strong>小范围查询填满间隙</strong>的严格计数</li>
+</ul>
+
+<p>在使用缓存表和汇总表时, 对数据的维护有两种方式:</p>
+
+<ul>
+<li>实时维护, 成本较高, 数据容易碎片化</li>
+<li>定期重建, 可以保持表不会有很多碎片, 而且能保证顺序组织索引, 更加高效</li>
+</ul>
+
+<p>重建表可以通过<strong>影子表</strong>的技巧</p>
+
+<ol>
+<li>创建相同结构的新表, <code>create table test_table_new like test_table</code></li>
+<li>填充数据, 数据有可能时老数据, 也可能时重新整理后的数据</li>
+<li>通过重命名来交换新表和旧表的名字, <code>rename table test_table to test_table_old, test_table_new to test_table</code></li>
+<li>如果出问题了, 可以很容易回滚旧表</li>
+</ol>
+
+<h3 id="计数表">计数表</h3>
+
+<p>为了提升技术表的并发处理能力, 在更新时随机到相应的slot行插入, 查询时汇总结果.</p>
+
+<pre><code>-- 多slot的计数表
+
+create table if not exists counter_tb (
+slot tinyint unsigned not null primary key, 
+cnt int unsigned not null
+) engine=InnoDB default charset=utf8mb4;
+
+-- 更新时随机slot更新
+insert into counter_tb (slot, cnt)
+values (rand() * 10, 1)
+on duplicate key update cnt = cnt + 1;
+
+-- 查询时汇总
+
+select * from counter_tb;
+
+select sum(cnt)
+from counter_tb;
+</code></pre>
+
+<h3 id="schema的修改">schema的修改</h3>
+
+<p>MySQL中大部分执行alter table来修改表结构的操作都会导致重建表, 即用新的结构创建新表, 将旧表数据导入新表, 最后删除旧表.
+这对大表来说需要花费很大的时间和代价.</p>
+
+<p>大部分的alter table操作都会导致MySQL服务中断.
+对于在生产环境中修改表结构, 一般可采用以下方法:</p>
+
+<ul>
+<li>在备用数据库上修改结构后, 和主库进行切换</li>
+<li>影子拷贝, 操作同创建影子表的操作; 也可借助一些第三方工具来进行影子拷贝</li>
+</ul>
+
+<p>.frm文件存储着表的结构, 它存放在mysql的data目录下对应的schema目录里, 默认的data目录为/var/lib/mysql.
+以下情况可通过修改<strong>.frm文件</strong>的结构来更新表结构, 但对.frm文件的修改存在风险, 需要做好备份:</p>
+
+<ul>
+<li>列的默认值</li>
+<li>NULL/NOT Null</li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><a href="https://book.douban.com/subject/23008813/">高性能MySQL</a>, 第4章 Schema与数据类型优化</li>
+<li><a href="https://www.zhihu.com/question/24696366">解释一下关系数据库的第一第二第三范式</a></li>
+<li><a href="https://www.cnblogs.com/ybwang/archive/2010/06/04/1751279.html">数据库设计三大范式与BCNF，学习笔记</a></li>
+</ul>
+</article>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <hr />
+            <blockquote class="blockquote text-center">
+                <small class="mb-0">
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                        <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+                    </a>
+                    <br />
+                    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
+                </small>
+            </blockquote>
+            <hr />
+        </div>
+    </div>
+
+    
+    
+    <div class="row">
+        <div class="col">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+            <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+            <script src="/js/md5.min.js"></script>
+            <div id="gitalk-container"></div>
+            <script type="text/javascript">
+                let rel_path = location.pathname
+                console.debug(rel_path)
+                var gitalkConfig = $.getJSON("/gitalk.json", function(data) {
+                    var gitalk = new Gitalk({
+                        clientID: data.clientID,
+                        clientSecret: data.clientSecret,
+                        id: md5(rel_path),
+                        repo: data.repo,
+                        owner: data.owner,
+                        admin: data.admin,
+                        distractionFreeMode: data.distractionFreeMode
+                    })
+                    gitalk.render('gitalk-container')
+                })
+            </script>
+        </div>
+    </div>
+    
+</div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="container">
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <small class="text-muted">Copyright© 2018 s2u2m</small>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a href="http://www.miitbeian.gov.cn/">
+                <small class="text-muted">蜀ICP备18013492号</small>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

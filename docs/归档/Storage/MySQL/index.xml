@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on Slancer</title>
+    <link>/%E5%BD%92%E6%A1%A3/Storage/MySQL/</link>
+    <description>Recent content in MySQL on Slancer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>xiayy860612@126.com (Slancer)</managingEditor>
+    <webMaster>xiayy860612@126.com (Slancer)</webMaster>
+    <lastBuildDate>Sun, 01 Jul 2018 19:50:13 +0800</lastBuildDate>
+    
+	<atom:link href="/%E5%BD%92%E6%A1%A3/Storage/MySQL/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[转载]Schema与数据类型优化</title>
+      <link>/%E5%BD%92%E6%A1%A3/Storage/MySQL/Schema%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Sun, 01 Jul 2018 18:32:37 +0800</pubDate>
+      <author>xiayy860612@126.com (Slancer)</author>
+      <guid>/%E5%BD%92%E6%A1%A3/Storage/MySQL/Schema%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BC%98%E5%8C%96/</guid>
+      <description>作者: Amos Xia demo: https://github.com/xiayy860612/example/tree/master/mysql_demo/schema 原文出处: Schema与数据类型优化  数据类型的选择 MySQL基础数据类型
+ 数字  整数  tinyint/smallint/mediumint/int/bigint unsigned可选  实数  Float/Double, 浮点计算 DECIMAL, 存储精确的小数, 一般可使用bigint来代替decimal, 通过乘以相应的倍数即可   字符串  char, 定长, 适合更新频繁的列或者长度固定的列 varchar, 变长, 需要额外的1或2个字节来存储长度, 小于等于255则1个字节, 大于则2个字节; 不适合更新频繁的列, 会导致碎片化 text, 很长的字符串  二进制字符串, 比较时以字节为单位进行比较, 效率要比普通字符串要高  binary, 定长 varbinary, 变长 blob, 很长的二进制字符串  时间  datetime, 从1001到9999年, 精度为秒, 把日期和时间封装到格式为YYYYMMDDHHMMSS的整数中, 显示与时区无关, 使用8字节存储 timestamp, 同unit时间戳, 从新纪元时间(1970-01-01T00:00:00)以来的秒数, 使用4字节存储, 只能表示1970到2038年, 显示依赖于时区, 会根据时区不同, 显示对应的时间; 对应的列默认为NOT NULL.</description>
+    </item>
+    
+  </channel>
+</rss>
