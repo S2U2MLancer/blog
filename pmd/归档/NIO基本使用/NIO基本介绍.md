@@ -1,4 +1,11 @@
 #NIO介绍
+
+
++
++- 作者: [yangxue](https://github.com/mypennyXue/)
++- demo: https://github.com/mypennyXue/JavaStudy
++- 参考: http://ifeve.com/java-nio-all/
+
 标准的IO基于字节流和字符流进行操作的，而NIO是基于通道（Channel）和缓冲区（Buffer）进行操作，
  数据总是从通道读取到缓冲区中，或者从缓冲区写入到通道中。
  NIO可以工作在非阻塞模式下
