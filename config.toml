@@ -15,3 +15,4 @@ disablePathToLower = true
 [params]
     beian = "蜀ICP备18013492号"
     copyright = "s2u2m"
+    discussEnable = true

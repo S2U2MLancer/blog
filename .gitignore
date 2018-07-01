@@ -2,6 +2,7 @@
 
 content/
 static/
+!static/gitalk.json
 themes/
 
 tools/

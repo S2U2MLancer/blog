@@ -154,6 +154,7 @@ mysql> select inet_ntoa(3232235521);
 
 ![](./img/schema_data_type/example.jpg)
 
+
 针对**写密集**的场景尤其需要对schema进行范式化, 而针对读密集的场景可以使用反范式.
 
 范式化的表能够更好更快的进行更新操作, 但是查询往往需要多表join; 
